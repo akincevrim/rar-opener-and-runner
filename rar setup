@@ -1,0 +1,22 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='rar_runner',
+    version='1.0',
+    packages=find_packages(),
+    scripts=['rar_runner.py'],
+    install_requires=[
+        'rarfile',
+        'tqdm'
+    ],
+    entry_points={
+        'console_scripts': [
+            'rar_runner = rar_runner:main'
+        ]
+    },
+    author='Your Name',
+    author_email='your@email.com',
+    description='Python script for RAR archive extraction and compression',
+    license='MIT',
+    keywords='rar compression extraction',
+    url='https://github.com/your_username/r
